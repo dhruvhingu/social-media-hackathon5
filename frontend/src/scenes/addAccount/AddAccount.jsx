@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
 
-const LoginPage = () => {
+const AddAccount = () => {
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
@@ -25,7 +25,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to EngageSocially, Connecting You to Social Stardom!
+          Add instagram Ids to connect
         </Typography>
         <Form />
       </Box>
@@ -33,4 +33,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default AddAccount;

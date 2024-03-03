@@ -56,10 +56,20 @@ import {
       setImage(null);
       setPost("");
     };
+    const dark = palette.neutral.dark;
   
-    return (
+    return (<div>
       <WidgetWrapper>
-        <FlexBetween gap="1.5rem">
+      <FlexBetween gap="1.5rem">
+      <Typography color={dark} variant="h5" fontWeight="500">
+            Your Posts and Reaction Analysis
+        </Typography>
+      </FlexBetween>
+      <WidgetWrapper>
+      </WidgetWrapper>
+
+         <FlexBetween gap="1.5rem">
+         
           <UserImage image={picturePath} />
           <InputBase
             placeholder="What's on your mind..."
@@ -72,7 +82,7 @@ import {
               padding: "1rem 2rem",
             }}
           />
-        </FlexBetween>
+        </FlexBetween> 
         {isImage && (
           <Box
             border={`1px solid ${medium}`}
@@ -116,7 +126,7 @@ import {
               )}
             </Dropzone>
           </Box>
-        )}
+        )} 
   
         <Divider sx={{ margin: "1.25rem 0" }} />
   
@@ -165,8 +175,9 @@ import {
           >
             POST
           </Button>
-        </FlexBetween>
-      </WidgetWrapper>
+        </FlexBetween> 
+        </WidgetWrapper>
+      </div>
     );
   };
   
